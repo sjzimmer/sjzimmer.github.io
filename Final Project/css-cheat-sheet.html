@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <!-- CSS Cheat Sheet Text -->
+  <div id="css-cheat-sheet">
+    <h2>CSS Cheat Sheet</h2>
+    <h3>Font Properties</h3>
+    <p>
+      <strong>Font-Family</strong><br>
+      Changes the font family of certain words, sentences, paragraphs, etc.<br>
+      <code>P { font-family: "New Century Schoolbook", Times, serif; }</code>
+    </p>
+    <p>
+      <strong>Font-Style</strong><br>
+      Changes text: normal, oblique, and italics.<br>
+      <code>H1 { font-style: oblique; }</code><br>
+      <code>P { font-style: normal; }</code>
+    </p>
+    <p>
+      <strong>Font-Variant</strong><br>
+      Used to display font in normal or small-caps.<br>
+      <code>SPAN { font-variant: small-caps; }</code>
+    </p>
+    <p>
+      <strong>Font-Weight</strong><br>
+      Used to specify the weight of the font.<br>
+      <code>H1 { font-weight: 800; }</code> or <code>P { font-weight: normal; }</code>
+    </p>
+    <p>
+      <strong>Font-Size</strong><br>
+      Used to modify the size of the displayed font.<br>
+      <code>H1 { font-size: large; }</code> or <code>P { font-size: 12pt; }</code><br>
+      <code>LI { font-size: 90%; }</code><br>
+      <code>STRONG { font-size: larger; }</code>
+    </p>
+    <p>
+      <strong>Font</strong><br>
+      Used to combine all properties of fonts.<br>
+      <code>P { font: italic bold 12pt/14pt Times, serif; }</code>
+    </p>
+    
+    <h3>Color and Background Properties</h3>
+    <p>
+      <strong>Color</strong><br>
+      Changes the color of text.<br>
+      <code>H1 { color: blue; }</code> or <code>H2 { color: #000080; }</code>
+    </p>
+    <p>
+      <strong>Background-Color</strong><br>
+      Sets the background color of an element.<br>
+      <code>BODY { background-color: white; }</code><br>
+      <code>H1 { background-color: #000080; }</code>
+    </p>
+    <p>
+      <strong>Background-Image</strong><br>
+      Sets the background image of an element.<br>
+      <code>BODY { background-image: url(/images/foo.gif); }</code><br>
+      <code>P { background-image: url(http://www.htmlhelp.com/bg.png); }</code>
+    </p>
+    <p>
+      <strong>Background-Repeat</strong><br>
+      Determines how a specified background image is repeated.<br>
+      The repeat-x value will repeat the image horizontally while the repeat-y value will repeat the image vertically.<br>
+      <code>BODY { background: white url(candybar.gif); background-repeat: repeat-x; }</code>
+    </p>
+    <p>
+      <strong>Background-Attachment</strong><br>
+      Determines if a specified background image will scroll with the content or be fixed with regard to the canvas.<br>
+      <code>BODY { background: white url(candybar.gif); background-attachment: fixed; }</code>
+    </p>
+    <p>
+      <strong>Background</strong><br>
+      Used to combine all properties of background.<br>
+      <code>BODY { background: white url(http://www.htmlhelp.com/foo.gif); }</code><br>
+      <code>BLOCKQUOTE { background: #7fffd4; }</code><br>
+      <code>P { background: url(../backgrounds/pawn.png) #f0f8ff fixed; }</code><br>
+      <code>TABLE { background: red url(leaves.jpg) no-repeat bottom right; }</code>
+    </p>
+    <!-- Text Properties -->
+    <h3>Text Properties</h3>
+    <p>
+      <strong>Word-Spacing</strong><br>
+      Defines an additional amount of space between words.<br>
+      <code>P EM { word-spacing: 0.4em; }</code><br>
+      <code>P.note { word-spacing: -0.2em; }</code>
+    </p>
+    <p>
+      <strong>Letter-Spacing</strong><br>
+      Defines an additional amount of space between characters.<br>
+      <code>H1 { letter-spacing: 0.1em; }</code><br>
+      <code>P.note { letter-spacing: -0.1em; }</code>
+    </p>
+    <p>
+      <strong>Text-Decoration</strong><br>
+      Allows text to be decorated through one of five properties: underline, overline, line-through, blink, none.<br>
+      <code>A:link, A:visited, A:active { text-decoration: none; }</code>
+    </p>
+    <p>
+      <strong>Vertical-Align</strong><br>
+      Used to alter the vertical positioning of an inline element, relative to its parent element or to the element's line.<br>
+      <code>IMG.middle { vertical-align: middle; }</code><br>
+      <code>IMG { vertical-align: 50%; }</code><br>
+      <code>.exponent { vertical-align: super; }</code>
+    </p>
+    <p>
+      <strong>Text-Transform</strong><br>
+      Allows for capitalizing the first letter of each word (capitalize), capitalizing all letters of a word (uppercase), using all small letters in each word(lowercase), and the initial value(none).<br>
+      <code>H1 { text-transform: uppercase; }</code><br>
+      <code>H2 { text-transform: capitalize; }</code>
+    </p>
+    <p>
+      <strong>Text-Align</strong><br>
+      Used to justify text left, center, right, and justify.<br>
+      <code>H1 { text-align: center; }</code><br>
+      <code>P.newspaper { text-align: justify; }</code>
+    </p>
+    <p>
+      <strong>Text-Indent</strong><br>
+      Used to specify the amount of indentation prior to the first line of text.<br>
+      <code>P { text-indent: 5em; }</code>
+    </p>
+    <p>
+      <strong>Line-Height</strong><br>
+      Used to control the spacing between baselines of text.<br>
+      <code>P { line-height: 200%; }</code>
+    </p>
+    <!-- Classification Properties -->
+    <h3>Classification Properties</h3>
+    <p>
+      <strong>List-Style-Type</strong><br>
+      Specifies the type of list-item marker, and is used if list-styleimage is none or if image loading is turned off.<br>
+      <code>LI.square { list-style-type: square; }</code><br>
+      <code>UL.plain { list-style-type: none; }</code><br>
+      <code>OL { list-style-type: upper-alpha; } /* A B C D E etc. */</code><br>
+      <code>OL OL { list-style-type: decimal; } /* 1 2 3 4 5 etc. */</code><br>
+      <code>OL OL OL { list-style-type: lower-roman; } /* i ii iii iv v etc. */</code>
+    </p>
+    <p>
+      <strong>List-Style-Image</strong><br>
+      Specifies the image that will be used as list-item marker when image loading is turned on, replacing the marker specified in the list-style-type property.<br>
+      <code>UL.check { list-style-image: url(/LI-markers/checkmark.gif); }</code><br>
+      <code>UL LI.x { list-style-image: url(x.png); }</code>
+    </p>
+    <p>
+      <strong>List-Style-Position</strong><br>
+      Determines where the marker is placed in regard to the list item. If the value inside is used, the lines will wrap under the marker instead of being indented. outside is default.<br>
+      <code>UL { list-style-position: inside; }</code>
+    </p>
+    <!-- Box Properties -->
+    <h3>Box Properties</h3>
+    <p>
+      <strong>Margin-Top</strong><br>
+      Sets the top margin of an element by specifying a length or a percentage.<br>
+      <code>BODY { margin-top: 5pt; }</code>
+    </p>
+    <p>
+      <strong>Margin-Right</strong><br>
+      Sets the right margin of an element by specifying a length or a percentage.<br>
+      <code>P.narrow { margin-right: 50%; }</code>
+    </p>
+    <p>
+      <strong>Margin-Bottom</strong><br>
+      Sets the bottom margin of an element by specifying a length or a percentage.<br>
+      <code>DT { margin-bottom: 3em; }</code>
+    </p>
+    <p>
+      <strong>Margin-Left</strong><br>
+      Sets the left margin of an element by specifying a length or a percentage.<br>
+      <code>ADDRESS { margin-left: 50%; }</code>
+    </p>
+    <p>
+      <strong>Margin</strong><br>
+      Sets the margins of an element by specifying top, bottom, left and right margins -- all either specifying length or percentage.<br>
+      <code>BODY { margin: 5em; } /* all margins 5em */</code><br>
+      <code>P { margin: 2em 4em; } /* top & bottom 2em, left & right 4em */</code><br>
+      <code>DIV { margin: 1em 2em 3em 4em; } /* top margin 1em, right 2em, bottom 3em, left 4em */</code>
+    </p>
+    <p>
+      <strong>Padding-Top</strong><br>
+      Describes the amount of space between the top border and the content of the selector.<br>
+      <code>P { padding-top: 20%; }</code>
+    </p>
+    <p>
+      <strong>Padding-Right</strong><br>
+      Describes the amount of space between the right border and the content of the selector.<br>
+      <code>P { padding-right: 20px; }</code>
+    </p>
+    <p>
+      <strong>Padding-Bottom</strong><br>
+      Describes the amount of space between the bottom border and the content of the selector.<br>
+      <code>P { padding-bottom: 5em; }</code>
+    </p>
+    <p>
+      <strong>Padding-Left</strong><br>
+      Describes the amount of space between the left border and the content of the selector.<br>
+      <code>P { padding-left: 15pt; }</code>
+    </p>
+    <p>
+      <strong>Padding</strong><br>
+      Shorthand for the padding-top, padding-right, padding-bottom, and padding-left properties.<br>
+      <code>BLOCKQUOTE { padding: 2em 4em 5em 4em; }</code>
+    </p>
+    <p>
+      <strong>Border-Top-Width</strong><br>
+      Used to specify the width of an element's top border.<br>
+      <code>P { border-top: 20%; }</code>
+    </p>
+    <p>
+      <strong>Border-Right-Width</strong><br>
+      Used to specify the width of an element's right border.<br>
+      <code>P { border-right: 20%; }</code>
+    </p>
+    <p>
+      <strong>Border-Bottom-Width</strong><br>
+      Used to specify the width of an element's bottom border.<br>
+      <code>P { border-bottom: 20%; }</code>
+    </p>
+    <p>
+      <strong>Border-Left-Width</strong><br>
+      Used to specify the width of an element's left border.<br>
+      <code>P { border-left: 20%; }</code>
+    </p>
+    <p>
+      <strong>Border-Width</strong><br>
+      Used to set the width of an element's border (either all borders, or specifying top border, right border, bottom border, left border).<br>
+      <code>P { border-width: 20%; }</code><br>
+      <code>P { border-width: 10px 5px 10px 5px; }</code>
+    </p>
+    <p>
+      <strong>Border-Color</strong><br>
+      Used to set the color of an element's border.<br>
+      <code>P { border-color: #00000; }</code>
+    </p>
+    <p>
+      <strong>Border-Style</strong><br>
+      Sets style of a border - none, dotted, dashed, solid, double.<br>
+      <code>P { border-style: dotted; }</code>
+    </p>
+    <p>
+      <strong>Border-Top</strong><br>
+      Sets the width, style, and color of an element's top border.<br>
+      <code>P { border-top: 10px, red, double; }</code>
+    </p>
+    <p>
+      <strong>Border-Right</strong><br>
+      Sets the width, style, and color of an element's right border.<br>
+      <code>P { border-right: 10px, red, double; }</code>
+    </p>
+    <p>
+      <strong>Border-Bottom</strong><br>
+      Sets the width, style, and color of an element's bottom border.<br>
+      <code>P { border-bottom: 10px, red, double; }</code>
+    </p>
+    <p>
+      <strong>Border-Left</strong><br>
+      Sets the width, style, and color of an element's left border.<br>
+      <code>P { border-left: 10px, red, double; }</code>
+    </p>
+    <p>
+      <strong>Border</strong><br>
+      Sets the width, style, and color of an element's border.<br>
+      <code>P { border: 10px, red, double; }</code>
+    </p>
+    <p>
+      <strong>Width</strong><br>
+      Each block-level or replaced element can be given a width, specified as a length, a percentage, or as auto.<br>
+      <code>P { width: 15px; }</code><br>
+      <code>H1 { width: 35%; }</code><br>
+      <code>.foo { width: auto; }</code>
+    </p>
+    <p>
+      <strong>Height</strong><br>
+      Each block-level or replaced element can be given a height, specified as a length or as auto.<br>
+      <code>P { height: 15px; }</code><br>
+      <code>H1 { height: 35%; }</code><br>
+      <code>.foo { height: auto; }</code>
+    </p>
+    <p>
+      <strong>Float</strong><br>
+      Allows text to wrap around an element (left, right, none).<br>
+      <code>P { float: left; }</code><br>
+      <code>H1 { float: right; }</code><br>
+      <code>.foo { float: none; }</code>
+    </p>
+    <p>
+      <strong>Clear</strong><br>
+      Specifies whether an element allows floating elements to its sides (left, right, none).<br>
+      <code>P { clear: left; }</code><br>
+      <code>H1 { clear: right; }</code><br>
+      <code>.foo { clear: none; }</code>
+    </p>
+  </div>
+  <script src="script.js"></script>
+  <footer>
+    <p style="text-align: center"> Website created by Sabrina Johanna Zimmer. </p>
+  </footer>
+</body>
+</html>
