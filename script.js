@@ -21,7 +21,7 @@ function generateHeader() {
       <nav>
         <ul class="menu">
           <li><a href="index.html">Home</a></li>
-          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
           <li class="dropdown">
             <a href="#" class="dropbtn">Cheat Sheets</a>
             <div class="dropdown-content">
