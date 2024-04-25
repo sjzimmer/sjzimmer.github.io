@@ -223,6 +223,7 @@ h3 {
 }
 
 /* Dropdown Styles */
+/* Dropdown Styles */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -237,11 +238,25 @@ h3 {
   z-index: 1;
 }
 
+/* Adjust the dropdown content width for mobile */
+@media only screen and (max-width: 600px) {
+  .dropdown-content {
+    min-width: 100%;
+    width: auto;
+    box-shadow: none;
+  }
+}
+
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+}
+
+/* Add margin between dropdown items */
+.dropdown-content a + a {
+  margin-top: 5px;
 }
 
 .dropdown-content a:hover {
@@ -251,6 +266,7 @@ h3 {
 .show {
   display: block;
 }
+
 
 /* Profile Container Styles */
 .profile-container {
