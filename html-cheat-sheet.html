@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Cheat Sheet</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Header container -->
+  <div id="header-container"></div>
+
+  <!-- HTML Cheat Sheet -->
+  <div id="html-cheat-sheet">
+  <h2>HTML Cheat Sheet</h2>
+  <h3>Basic Tags</h3>
+  <ul>
+    <li><code>&lt;html&gt;</code> <code>&lt;/html&gt;</code> - Creates an HTML document</li>
+    <li><code>&lt;head&gt;</code> <code>&lt;/head&gt;</code> - Sets off the title & other info that isn't displayed</li>
+    <li><code>&lt;body&gt;</code> <code>&lt;/body&gt;</code> - Sets off the visible portion of the document</li>
+    <li><code>&lt;title&gt;</code> <code>&lt;/title&gt;</code> - Puts name of the document in the title bar; when bookmarking pages, this is what is bookmarked</li>
+  </ul>
+  
+  <h3>Body attributes</h3>
+  <ul>
+    <li><code>&lt;body bgcolor=?&gt;</code> - Sets background color, using name or hex value</li>
+    <li><code>&lt;body text=?&gt;</code> - Sets text color, using name or hex value</li>
+    <li><code>&lt;body link=?&gt;</code> - Sets color of links, using name or hex value</li>
+    <li><code>&lt;body vlink=?&gt;</code> - Sets color of visited links, using name or hex value</li>
+    <li><code>&lt;body alink=?&gt;</code> - Sets color of active links (while mouse-clicking)</li>
+  </ul>
+  
+  <h3>Text Tags</h3>
+  <ul>
+    <li><code>&lt;pre&gt;</code> <code>&lt;/pre&gt;</code> - Creates preformatted text</li>
+    <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> - Creates headlines - H1=largest, H6=smallest</li>
+    <li><code>&lt;b&gt;</code> <code>&lt;/b&gt;</code> - Creates bold text (should use <code>&lt;strong&gt;</code> instead)</li>
+    <li><code>&lt;i&gt;</code> <code>&lt;/i&gt;</code> - Creates italicized text (should use <code>&lt;em&gt;</code> instead)</li>
+    <li><code>&lt;tt&gt;</code> <code>&lt;/tt&gt;</code> - Creates typewriter-style text</li>
+    <li><code>&lt;code&gt;</code> <code>&lt;/code&gt;</code> - Used to define source code, usually monospace</li>
+    <li><code>&lt;cite&gt;</code> <code>&lt;/cite&gt;</code> - Creates a citation, usually processed in italics</li>
+    <li><code>&lt;address&gt;</code> <code>&lt;/address&gt;</code> - Creates address section, usually processed in italics</li>
+    <li><code>&lt;em&gt;</code> <code>&lt;/em&gt;</code> - Emphasizes a word (usually processed in italics)</li>
+    <li><code>&lt;strong&gt;</code> <code>&lt;/strong&gt;</code> - Emphasizes a word (usually processed in bold)</li>
+    <li><code>&lt;font size=?&gt;</code> <code>&lt;/font&gt;</code> - Sets size of font - 1 to 7 (should use CSS instead)</li>
+    <li><code>&lt;font color=?&gt;</code> <code>&lt;/font&gt;</code> - Sets font color (should use CSS instead)</li>
+    <li><code>&lt;font face=?&gt;</code> <code>&lt;/font&gt;</code> - Defines the font used (should use CSS instead)</li>
+  </ul>
+  
+  <h3>Links</h3>
+  <ul>
+    <li><code>&lt;a href="URL"&gt;</code> clickable text <code>&lt;/a&gt;</code> - Creates a hyperlink to a Uniform Resource Locator</li>
+    <li><code>&lt;a href="mailto:EMAIL_ADDRESS"&gt;</code> clickable text <code>&lt;/a&gt;</code> - Creates a hyperlink to an email address</li>
+    <li><code>&lt;a name="NAME"&gt;</code> - Creates a target location within a document</li>
+    <li><code>&lt;a href="#NAME"&gt;</code> clickable text <code>&lt;/a&gt;</code> - Creates a link to that target location</li>
+  </ul>
+  
+  <h3>Formatting</h3>
+  <ul>
+    <li><code>&lt;p&gt;</code> <code>&lt;/p&gt;</code> - Creates a new paragraph</li>
+    <li><code>&lt;br&gt;</code> - Inserts a line break (carriage return)</li>
+    <li><code>&lt;blockquote&gt;</code> <code>&lt;/blockquote&gt;</code> - Puts content in a quote - indents text from both sides</li>
+    <li><code>&lt;div&gt;</code> <code>&lt;/div&gt;</code> - Used to format block content with CSS</li>
+    <li><code>&lt;span&gt;</code> <code>&lt;/span&gt;</code> - Used to format inline content with CSS</li>
+  </ul>
+  
+  <h3>Lists</h3>
+  <ul>
+    <li><code>&lt;ul&gt;</code> <code>&lt;/ul&gt;</code> - Creates an unordered list</li>
+    <li><code>&lt;ol start=?&gt;</code> <code>&lt;/ol&gt;</code> - Creates an ordered list (start=xx, where xx is a counting number)</li>
+    <li><code>&lt;li&gt;</code> <code>&lt;/li&gt;</code> - Encompasses each list item</li>
+    <li><code>&lt;dl&gt;</code> <code>&lt;/dl&gt;</code> - Creates a definition list</li>
+    <li><code>&lt;dt&gt;</code> - Precedes each definition term</li>
+    <li><code>&lt;dd&gt;</code> - Precedes each definition</li>
+  </ul>
+  
+  <h3>Graphical Elements</h3>
+  <ul>
+    <li><code>&lt;hr&gt;</code> - Inserts a horizontal rule</li>
+    <li><code>&lt;hr size=?&gt;</code> - Sets size (height) of horizontal rule</li>
+    <li><code>&lt;hr width=?&gt;</code> - Sets width of rule (as a % or absolute pixel length)</li>
+    <li><code>&lt;hr noshade&gt;</code> - Creates a horizontal rule without a shadow</li>
+    <li><code>&lt;img src="URL"&gt;</code> - Adds image; it is a separate file located at the URL</li>
+    <li><code>&lt;img src="URL" align=?&gt;</code> - Aligns image left/right/center/bottom/top/middle (use CSS)</li>
+    <li><code>&lt;img src="URL" border=?&gt;</code> - Sets size of border surrounding image (use CSS)</li>
+    <li><code>&lt;img src="URL" height=?&gt;</code> - Sets height of image, in pixels</li>
+    <li><code>&lt;img src="URL" width=?&gt;</code> - Sets width of image, in pixels</li>
+    <li><code>&lt;img src="URL" alt=?&gt;</code> - Sets the alternate text for browsers that can't process images (required by the ADA)</li>
+  </ul>  
+  
+  <h3>Forms</h3>
+  <ul>
+    <li><code>&lt;form&gt;</code> <code>&lt;/form&gt;</code> - Defines a form</li>
+    <li><code>&lt;select multiple name=? size=?&gt;</code> &lt;/select&gt; - Creates a scrolling menu. Size sets the number of menu items visible before user needs to scroll.</li>
+    <li><code>&lt;select name=?&gt;</code> &lt;/select&gt; - Creates a pulldown menu</li>
+    <li><code>&lt;option&gt;</code> - Sets off each menu item</li>
+    <li><code>&lt;textarea name=? cols="x" rows="y"&gt;&lt;/textarea&gt;</code> - Creates a text box area. Columns set the width; rows set the height.</li>
+    <li><code>&lt;input type="checkbox" name=? value=?&gt;</code> - Creates a checkbox.</li>
+    <li><code>&lt;input type="checkbox" name=? value=? checked&gt;</code> - Creates a checkbox which is pre-checked.</li>
+    <li><code>&lt;input type="radio" name=? value=?&gt;</code> - Creates a radio button.</li>
+    <li><code>&lt;input type="radio" name=? value=? checked&gt;</code> - Creates a radio button which is pre-checked.</li>
+    <li><code>&lt;input type="text" name=? size=?&gt;</code> - Creates a one-line text area. Size sets length, in characters.</li>
+    <li><code>&lt;input type="submit" value=?&gt;</code> - Creates a submit button. Value sets the text in the submit button.</li>
+    <li><code>&lt;input type="image" name=? src=? border=? alt=?&gt;</code> - Creates a submit button using an image.</li>
+    <li><code>&lt;input type="reset"&gt;</code> - Creates a reset button</li>
+  </ul>
+  
+  <h3>Tables</h3>
+  <ul>
+    <li><code>&lt;table&gt;</code> <code>&lt;/table&gt;</code> - Creates a table</li>
+    <li><code>&lt;tr&gt;</code> <code>&lt;/tr&gt;</code> - Sets off each row in a table</li>
+    <li><code>&lt;td&gt;</code> <code>&lt;/td&gt;</code> - Sets off each cell in a row</li>
+    <li><code>&lt;th&gt;</code> <code>&lt;/th&gt;</code> - Sets off the table header (a normal cell with bold, centered text)</li>
+  </ul>
+  
+  <h3>Table attributes</h3>
+  <ul>
+    <li><code>&lt;table border=?&gt;</code> - Sets the width of the border around table cells</li>
+    <li><code>&lt;table cellspacing=?&gt;</code> - Sets amount of space between table cells</li>
+    <li><code>&lt;table cellpadding=?&gt;</code> - Sets amount of space between a cell's border and its contents</li>
+    <li><code>&lt;table width=?&gt;</code> - Sets width of the table in pixels or as a percentage</li>
+    <li><code>&lt;td align=?&gt;</code> - Sets alignment for cells (left/center/right)</li>
+    <li><code>&lt;td valign=?&gt;</code> - Sets vertical alignment for cell (top/middle/bottom)</li>
+    <li><code>&lt;td rowspan=?&gt;</code> - Sets number of rows a cell should span (default=1)</li>
+    <li><code>&lt;td colspan=?&gt;</code> - Sets number of columns a cell should span</li>
+    <li><code>&lt;td nowrap&gt;</code> - Prevents lines within a cell from being broken to fit</li>
+  </ul>
+  
+  <h3>HTML5 input tag attributes</h3>
+  <ul>
+    <li><code>&lt;input type="email" name=?&gt;</code> - Sets a single-line textbox for email addresses</li>
+    <li><code>&lt;input type="url" name=?&gt;</code> - Sets a single-line textbox for URLs</li>
+    <li><code>&lt;input type="number" name=?&gt;</code> - Sets a single-line textbox for a number</li>
+    <li><code>&lt;input type="range" name=?&gt;</code> - Sets a single-line text box for a range of numbers</li>
+    <li><code>&lt;input type="date/month/week/time" name=?&gt;</code> - Sets a single-line text box with a calendar showing the date/month/week/time</li>
+    <li><code>&lt;input type="search" name=?&gt;</code> - Sets a single-line text box for searching</li>
+    <li><code>&lt;input type="color" name=?&gt;</code> - Sets a single-line text box for picking a color</li>
+  </ul>
+</div>
+
+<script src="script.js"></script> <!-- Link to external JavaScript file -->
+<footer>
+  <p style="text-align: center"> Website created by Sabrina Johanna Zimmer. </p>
+</footer>
+</body>
+</html>
