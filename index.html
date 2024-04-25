@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+
+<body>
+  <div id="overlay"></div> <!-- Add overlay for loader -->
+  <div id="loader">
+    <img src="img/loader.gif" alt="Loading..."> <!-- Loader image -->
+  </div>
+
+<!-- Header container -->
+  <div id="header-container"></div> 
+  
+  <div class="main">
+    <div class="sidebar">
+      <div class="sidebar-content">
+
+        <!-- Profile container -->
+        <div class="profile-container">
+          <img src="img/Sabrina.png" alt="Sabrina's photo" class="profile-image">
+          <h1 class="profile-text">Hi, my name is <br><strong>Sabrina</strong>!</h1>
+        </div>
+      </div>
+    </div>
+    <div class="name-and-icons">
+
+      <!-- About Me box with scroll -->
+      <div class="about-me-box">
+        <div class="container">
+          
+          <!-- Section 1: About Me -->
+          <section class="section">
+            <div class="personal-info">
+              <h2>About Me</h2>
+              <p>I am a <strong>Software Development</strong> student at Bow Valley College in Calgary, AB, Canada. I hold a Bachelor's Degree in Administration and an MBA in Digital Business. Additionally, I am a Certified Professional <strong>Scrum Master</strong> by Scrum.org.</p>
+              <p>My goal is to learn Software Development to enhance my IT Project Management skills and because I find it enjoyable.</p>
+              <p><strong>Fun fact:</strong> I currently work as a Tattoo Artist at <a href="https://atticustattoo.com/sabrina/">Atticus Tattoo</a> and <a href="https://royaltattooyyc.com/sabrina-pet-tattoos/">Royal Tattoo</a>!</p>
+            </div>
+          </section>
+
+          <!-- Social icons -->
+          <div class="social-icons center">
+            <a href="https://www.linkedin.com/in/sjzimmer13/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/sabrinink/" target="_blank"><img src="img/Instagram.png" alt="Instagram"></a> 
+            <a href="https://www.facebook.com/sjzimmer13/" target="_blank"><img src="img/Facebook.png" alt="Facebook"></a>
+          </div>
+          
+          <!-- Section 2: Education -->
+          <section class="section">
+            <h2>Education</h2>
+            <ul>
+              <li><strong>Bow Valley College</strong> - Software Development Diploma (In Progress), Calgary, AB - 2025</li>
+              <li><strong>University of São Paulo</strong> - MBA in Digital Business, São Paulo, Brazil - 2022</li>
+              <li><strong>FIA Business School</strong> - Bachelor of Business, São Paulo, Brazil - 2016</li>
+            </ul>
+          </section>
+          
+          <!-- Section 3: Work Experience -->
+          <section class="section">
+            <h2>Work Experience</h2>
+            <button id="downloadPDF">Download PDF</button> <!-- Button to download PDF -->
+          </section>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script> <!-- Link to external JavaScript file -->
+
+  <footer>
+    <p style="text-align: center"> Website created by Sabrina Johanna Zimmer. </p> <!-- Footer -->
+  </footer>
+  
+</body>
+</html>
